@@ -3,14 +3,18 @@ import { useNoSSRContext } from "../../contexts/NoSSRContext";
 
 interface INoSsr {
   children: React.JSX.Element;
-  fallback?: any;
+  fallback?: React.JSX.Element;
+  /** additional checker if needed */
   shouldShow?: () => boolean;
+  /** task id */
   id?: number | string;
+  /** task weight */
   weight?: number | null;
+  /** task priority level. min - __0__, max - __priorityLevels - 1__  */
   priority?: number;
 }
 
-const NoSsr: React.FC<INoSsr> = ({
+export const NoSSR: React.FC<INoSsr> = ({
   children,
   fallback = <></>,
   shouldShow = () => true,
@@ -37,5 +41,3 @@ const NoSsr: React.FC<INoSsr> = ({
 
   return show ? children : fallback;
 };
-
-export default NoSsr;
