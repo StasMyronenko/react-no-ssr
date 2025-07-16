@@ -1,12 +1,6 @@
 import React, { createContext, useContext, useRef } from "react";
 import { sleep } from "../helpers/utils";
-
-type TaskType = {
-  action: () => void;
-  id?: number | string;
-  weight?: number | null;
-  priority?: number;
-};
+import { TaskType } from "../helpers/types";
 
 interface INoSSRProviderValue {
   addTask: (props: TaskType) => void;
