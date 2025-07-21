@@ -50,11 +50,11 @@ export const NoSSRProvider: React.FC<INoSSRProvider> = ({
   };
 
   const popTask = () => {
-    queue.current.forEach((subQueue) => {
+    for (const subQueue of queue.current) {
       if (subQueue?.length) {
-        return subQueue?.shift();
+        return subQueue.shift();
       }
-    });
+    }
     return null;
   };
 
