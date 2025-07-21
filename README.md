@@ -17,7 +17,6 @@ especially when used repeatedly.
 - 🧠 Designed to reduce main thread blocking<
 - ⚙️ Framework-agnostic (works in Next.js, Remix, etc.)
 - 📦 Tiny and tree-shakable
-- 🧩 Drop-in replacement for traditional NoSSR
 
 ## 📦 Installation
 
