@@ -6,7 +6,7 @@ Bun.build({
   format: "cjs",
   splitting: true,
   sourcemap: "external",
-  external: ["react"], // не включати в бандл
+  external: ["react"],
   minify: false,
 });
 
@@ -18,6 +18,6 @@ Bun.build({
   format: "esm",
   splitting: true,
   sourcemap: "external",
-  external: ["react"], // не включати в бандл
+  external: ["react"],
   minify: false,
 });

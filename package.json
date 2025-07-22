@@ -1,6 +1,6 @@
 {
   "name": "react-soft-no-ssr",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "files": [
     "dist",
@@ -9,7 +9,7 @@
   ],
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "NODE_ENV=production bun bun-config.ts && tsc"
   },
