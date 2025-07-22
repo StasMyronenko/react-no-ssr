@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNoSSRContext } from "../../contexts/NoSSRContext";
 
 interface INoSsr {
-  children: React.JSX.Element;
-  fallback?: React.JSX.Element;
+  children: React.ReactNode;
+  fallback?: React.ReactNode;
   /** additional checker if needed */
   shouldShow?: () => boolean;
   /** task id */

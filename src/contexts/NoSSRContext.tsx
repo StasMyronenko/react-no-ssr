@@ -13,12 +13,12 @@ export const useNoSSRContext = () => {
 };
 
 interface INoSSRProvider {
-  children: React.JSX.Element;
+  children: React.ReactNode;
   /** maximum count of level priority. Default value 1. */
-  priorityLevels: number;
+  priorityLevels?: number;
   /** If exists starts to unblock main thread only if sum of task weights more than maxWeight.
    * If not specified unblock main thread after every task. */
-  maxWeight: number | null;
+  maxWeight?: number | null;
   /** Default task weight. Only needed with maxWeight. Default value 1. */
   defaultWeight?: number;
 }
